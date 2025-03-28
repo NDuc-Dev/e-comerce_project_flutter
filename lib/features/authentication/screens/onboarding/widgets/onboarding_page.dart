@@ -1,6 +1,7 @@
 import 'package:e_cormerce_project/utils/constants/sizes.dart';
 import 'package:e_cormerce_project/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 class OnBoardingPage extends StatelessWidget {
   const OnBoardingPage({
@@ -17,12 +18,17 @@ class OnBoardingPage extends StatelessWidget {
       padding: const EdgeInsets.all(AppSizes.defaultSpace),
       child: Column(
         children: [
-          Image(
-            width: HelperFunction.screenWidth() * 0.8,
-            height: HelperFunction.screenHeight() * 0.6,
-            // image: AssetImage(AppImage.onBoardingImage1),
-            image: AssetImage(image),
-          ),
+          // Image(
+          //   width: HelperFunction.screenWidth() * 0.8,
+          //   height: HelperFunction.screenHeight() * 0.6,
+          //   image: AssetImage(image),
+          // ),
+          Lottie.asset(
+          image, // image là đường dẫn đến file .json
+          width: HelperFunction.screenWidth() * 0.8,
+          height: HelperFunction.screenHeight() * 0.6,
+          fit: BoxFit.contain,
+        ),
           Text(
             title,
             style: Theme.of(context).textTheme.headlineMedium,
