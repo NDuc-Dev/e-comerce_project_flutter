@@ -1,3 +1,4 @@
+import 'package:e_cormerce_project/utils/constants/colors.dart';
 import 'package:e_cormerce_project/utils/theme/custom_theme/app_app_bar_theme.dart';
 import 'package:e_cormerce_project/utils/theme/custom_theme/app_bottom_sheet_theme.dart';
 import 'package:e_cormerce_project/utils/theme/custom_theme/app_checkbox_theme.dart';
@@ -16,7 +17,7 @@ class AppTheme {
     fontFamily: 'Poppins',
     brightness: Brightness.light,
     primaryColor: Colors.blue,
-    scaffoldBackgroundColor: Colors.white,
+    scaffoldBackgroundColor: AppColors.light,
     textTheme: AppTextTheme.lightTextTheme,
     chipTheme: AppChipTheme.lightChipTheme,
     appBarTheme: AppAppBarTheme.lightAppBarTheme,
@@ -31,7 +32,7 @@ class AppTheme {
     fontFamily: 'Poppins',
     brightness: Brightness.dark,
     primaryColor: Colors.blue,
-    scaffoldBackgroundColor: Colors.black,
+    scaffoldBackgroundColor: AppColors.dark,
     textTheme: AppTextTheme.darkTextTheme,
     chipTheme: AppChipTheme.darkChipTheme,
     appBarTheme: AppAppBarTheme.darkAppBarTheme,
