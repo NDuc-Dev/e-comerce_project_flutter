@@ -10,7 +10,7 @@ class AppElevationButtonTheme {
       backgroundColor: Colors.blue,
       disabledForegroundColor: Colors.grey,
       disabledBackgroundColor: Colors.grey,
-      side: const BorderSide(color: Colors.black),
+      side: const BorderSide(color: Colors.blue),
       padding: const EdgeInsets.symmetric(vertical: 18),
       textStyle: const TextStyle(
         fontSize: 16,

@@ -9,11 +9,13 @@ class AppImage {
   static const String facebook = "assets/logos/facebook-icon.png";
 
   static const String onBoardingImage3 =
-      "assets/images/on_boarding_images/delivery.json";
+      "assets/animations/on_boarding/delivery.json";
   static const String onBoardingImage4 =
-      "assets/images/on_boarding_images/no-connection.json";
+      "assets/animations/on_boarding/no-connection.json";
   static const String onBoardingImage1 =
-      "assets/images/on_boarding_images/search-product.json";
+      "assets/animations/on_boarding/search-product.json";
   static const String onBoardingImage2 =
-      "assets/images/on_boarding_images/shopping.json";
+      "assets/animations/on_boarding/shopping.json";
+  static const String deliveredEmail = "assets/animations/delivered_email.json";
+  static const String success = "assets/animations/success.json";
 }

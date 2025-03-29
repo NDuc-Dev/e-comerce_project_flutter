@@ -1,14 +1,13 @@
+import 'package:e_cormerce_project/features/authentication/screens/sign_up/verify_email.dart';
 import 'package:e_cormerce_project/features/authentication/screens/sign_up/widgets/term_and_condition_checkbox.dart';
 import 'package:e_cormerce_project/utils/constants/sizes.dart';
 import 'package:e_cormerce_project/utils/constants/text_string.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class SignUpForm extends StatelessWidget {
-  const SignUpForm({
-    super.key,
-  });
-
+  const SignUpForm({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +38,7 @@ class SignUpForm extends StatelessWidget {
               ),
             ],
           ),
-    
+
           //Email
           SizedBox(height: AppSizes.spaceBtwInputFields),
           TextFormField(
@@ -49,7 +48,7 @@ class SignUpForm extends StatelessWidget {
               prefixIcon: Icon(Iconsax.direct),
             ),
           ),
-    
+
           //Password
           SizedBox(height: AppSizes.spaceBtwInputFields),
           TextFormField(
@@ -61,16 +60,16 @@ class SignUpForm extends StatelessWidget {
             ),
           ),
           SizedBox(height: AppSizes.spaceBtwInputFields),
-    
+
           //Term & Condition check box
           TermAndConditionCheckbox(),
           SizedBox(height: AppSizes.spaceBtwSections),
-    
+
           //SignUp btn
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () => Get.to(() => VerifyEmailScreen()),
               child: const Text(AppTexts.createAccount),
             ),
           ),
@@ -79,4 +78,3 @@ class SignUpForm extends StatelessWidget {
     );
   }
 }
-

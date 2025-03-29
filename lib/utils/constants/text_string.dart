@@ -39,6 +39,8 @@ class AppTexts {
   static const String resendEmail = "Resend email";
   static const String orSignInWith = "Or Sign In With";
   static const String orSignUpWith = "Or Sign Up With";
+  static const String appContinue = "Continue"; 
+  
 
   // Authentication Headings Text
   static const String loginTitle = "Welcome back,";
