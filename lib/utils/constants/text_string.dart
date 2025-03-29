@@ -32,11 +32,13 @@ class AppTexts {
   static const String signInWithGoogle = "Sign in with Google";
   static const String signInWithFacebook = "Sign in with Facebook";
   static const String agreeTo = "I agree to";
+  static const String and = "and";
   static const String privacyPolicy = "Privacy Policy";
   static const String termsOfUse = "Terms of use";
   static const String verificationCode = "Verification Code";
   static const String resendEmail = "Resend email";
   static const String orSignInWith = "Or Sign In With";
+  static const String orSignUpWith = "Or Sign Up With";
 
   // Authentication Headings Text
   static const String loginTitle = "Welcome back,";

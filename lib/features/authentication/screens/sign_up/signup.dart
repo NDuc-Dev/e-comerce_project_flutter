@@ -1,13 +1,17 @@
+import 'package:e_cormerce_project/features/authentication/screens/sign_up/widgets/signup_form.dart';
+import 'package:e_cormerce_project/utils/common/widgets.login_signup/form_divider.dart';
+import 'package:e_cormerce_project/utils/common/widgets.login_signup/social_button.dart';
 import 'package:e_cormerce_project/utils/constants/sizes.dart';
 import 'package:e_cormerce_project/utils/constants/text_string.dart';
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
+import 'package:get/get.dart';
 
 class SignupScreen extends StatelessWidget {
   const SignupScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       appBar: AppBar(),
       body: SingleChildScrollView(
@@ -23,23 +27,14 @@ class SignupScreen extends StatelessWidget {
               const SizedBox(height: AppSizes.spaceBtwSections),
 
               //Form
-              Form(
-                child: Column(
-                  children: [
-                    Row(
-                      children: [
-                        TextFormField(
-                          expands: false,
-                          decoration: const InputDecoration(
-                            labelText: AppTexts.firstName,
-                            prefixIcon: Icon(Iconsax.user),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
+              SignUpForm(),
+              const SizedBox(height: AppSizes.spaceBtwSections),
+
+              //Divider
+              FormDivider(dividerText: AppTexts.orSignUpWith.capitalize!),
+              SizedBox(height: AppSizes.spaceBtwSections),
+              //Social btn
+              const SocialButton(),
             ],
           ),
         ),
@@ -47,3 +42,5 @@ class SignupScreen extends StatelessWidget {
     );
   }
 }
+
+
