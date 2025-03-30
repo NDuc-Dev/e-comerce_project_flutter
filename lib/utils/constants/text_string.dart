@@ -40,6 +40,9 @@ class AppTexts {
   static const String orSignInWith = "Or Sign In With";
   static const String orSignUpWith = "Or Sign Up With";
   static const String appContinue = "Continue"; 
+  static const String submit = "Submit";
+  static const String done = "Done";
+  
   
 
   // Authentication Headings Text
