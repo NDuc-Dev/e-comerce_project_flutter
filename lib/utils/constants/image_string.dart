@@ -18,4 +18,11 @@ class AppImage {
       "assets/animations/on_boarding/shopping.json";
   static const String deliveredEmail = "assets/animations/delivered_email.json";
   static const String success = "assets/animations/success.json";
+
+  static const String nikeLogoIcon = "assets/images/nike-logo.png";
+
+  static const String banner1 = "assets/images/banners/mlb-banner.png";
+  static const String banner2 = "assets/images/banners/puma-x-harry_potter.png";
+  static const String banner3 =
+      "assets/images/banners/tom_n_jerry_eng_main_desktop.png";
 }

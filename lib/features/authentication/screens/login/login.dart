@@ -1,6 +1,6 @@
 import 'package:e_cormerce_project/features/authentication/screens/login/widgets/login_form.dart';
 import 'package:e_cormerce_project/features/authentication/screens/login/widgets/login_header.dart';
-import 'package:e_cormerce_project/utils/common/styles/spacing_style.dart';
+import 'package:e_cormerce_project/common/styles/spacing_style.dart';
 import 'package:e_cormerce_project/common/widgets/login_signup/form_divider.dart';
 import 'package:e_cormerce_project/common/widgets/login_signup/social_button.dart';
 import 'package:e_cormerce_project/utils/constants/sizes.dart';

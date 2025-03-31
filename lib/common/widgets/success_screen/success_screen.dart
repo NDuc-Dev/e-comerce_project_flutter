@@ -1,4 +1,4 @@
-import 'package:e_cormerce_project/utils/common/styles/spacing_style.dart';
+import 'package:e_cormerce_project/common/styles/spacing_style.dart';
 import 'package:e_cormerce_project/utils/constants/sizes.dart';
 import 'package:e_cormerce_project/utils/constants/text_string.dart';
 import 'package:e_cormerce_project/utils/helpers/helper_function.dart';

@@ -2,7 +2,9 @@ import 'package:e_cormerce_project/common/widgets/custom_shapes/containers/searc
 import 'package:e_cormerce_project/common/widgets/texts/section_heading.dart';
 import 'package:e_cormerce_project/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:e_cormerce_project/common/widgets/custom_shapes/containers/primary_header_container.dart';
+import 'package:e_cormerce_project/features/shop/screens/home/widgets/home_categories.dart';
 import 'package:e_cormerce_project/utils/constants/colors.dart';
+import 'package:e_cormerce_project/utils/constants/image_string.dart';
 import 'package:e_cormerce_project/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
@@ -15,47 +17,47 @@ class Home extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
+            // Header
             PrimaryHeaderContainer(
               child: Column(
                 children: [
+                  //AppBar
                   const HomeAppBar(),
                   const SizedBox(height: AppSizes.spaceBtwSections),
+
+                  //Searchbar
                   const AppSearchContainer(text: "Search in Store"),
                   const SizedBox(height: AppSizes.spaceBtwSections),
+
+                  //Categories
                   Padding(
                     padding: EdgeInsets.only(left: AppSizes.defaultSpace),
                     child: Column(
                       children: [
+                        //Section Heading
                         AppSectionHeading(
                           title: 'Brand Categories',
                           showActionButton: false,
+                          textColor: AppColors.white,
                         ),
                         const SizedBox(height: AppSizes.spaceBtwItems),
 
-                        ListView.builder(
-                          itemCount: 6,
-                          scrollDirection: Axis.horizontal,
-                          itemBuilder: (_, index) {
-                            return Column(
-                              children: [
-                                Container(
-                                  width: 56,
-                                  height: 56,
-                                  padding: const EdgeInsets.all(AppSizes.sm),
-                                  decoration: BoxDecoration(
-                                    color: AppColors.white,
-                                    borderRadius: BorderRadius.circular(100),
-                                  ),
-                                ),
-                              ],
-                            );
-                          },
-                        ),
+                        //Categories
+                        AppHomeCategories(),
                       ],
                     ),
                   ),
                 ],
               ),
+            ),
+
+            //Body
+            Container(
+              padding: const EdgeInsets.all(AppSizes.defaultSpace),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(AppSizes.md),
+              ),
+              child: Image(image: AssetImage(AppImage.banner3)),
             ),
           ],
         ),
