@@ -1,5 +1,5 @@
-import 'package:e_cormerce_project/utils/common/widgets/appbar/appbar.dart';
-import 'package:e_cormerce_project/utils/common/widgets/products_cart/cart_menu_icon.dart';
+import 'package:e_cormerce_project/common/widgets/appbar/appbar.dart';
+import 'package:e_cormerce_project/common/widgets/products_cart/cart_menu_icon.dart';
 import 'package:e_cormerce_project/utils/constants/colors.dart';
 import 'package:e_cormerce_project/utils/constants/text_string.dart';
 import 'package:flutter/material.dart';

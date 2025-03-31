@@ -1,5 +1,5 @@
 import 'package:e_cormerce_project/features/authentication/screens/login/login.dart';
-import 'package:e_cormerce_project/utils/common/widgets/success_screen/success_screen.dart';
+import 'package:e_cormerce_project/common/widgets/success_screen/success_screen.dart';
 import 'package:e_cormerce_project/utils/constants/image_string.dart';
 import 'package:e_cormerce_project/utils/constants/sizes.dart';
 import 'package:e_cormerce_project/utils/constants/text_string.dart';

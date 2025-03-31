@@ -1,5 +1,5 @@
-import 'package:e_cormerce_project/utils/common/widgets/custom_shapes/containers/cicular_container.dart';
-import 'package:e_cormerce_project/utils/common/widgets/custom_shapes/curved_edges/curved_edges_widget.dart';
+import 'package:e_cormerce_project/common/widgets/custom_shapes/containers/cicular_container.dart';
+import 'package:e_cormerce_project/common/widgets/custom_shapes/curved_edges/curved_edges_widget.dart';
 import 'package:e_cormerce_project/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 

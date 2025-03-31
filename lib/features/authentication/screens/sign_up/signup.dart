@@ -1,6 +1,6 @@
 import 'package:e_cormerce_project/features/authentication/screens/sign_up/widgets/signup_form.dart';
-import 'package:e_cormerce_project/utils/common/widgets/login_signup/form_divider.dart';
-import 'package:e_cormerce_project/utils/common/widgets/login_signup/social_button.dart';
+import 'package:e_cormerce_project/common/widgets/login_signup/form_divider.dart';
+import 'package:e_cormerce_project/common/widgets/login_signup/social_button.dart';
 import 'package:e_cormerce_project/utils/constants/sizes.dart';
 import 'package:e_cormerce_project/utils/constants/text_string.dart';
 import 'package:flutter/material.dart';
