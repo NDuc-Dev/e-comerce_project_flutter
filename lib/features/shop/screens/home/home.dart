@@ -3,8 +3,8 @@ import 'package:e_cormerce_project/common/widgets/texts/section_heading.dart';
 import 'package:e_cormerce_project/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:e_cormerce_project/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:e_cormerce_project/features/shop/screens/home/widgets/home_categories.dart';
+import 'package:e_cormerce_project/features/shop/screens/home/widgets/promo_slider.dart';
 import 'package:e_cormerce_project/utils/constants/colors.dart';
-import 'package:e_cormerce_project/utils/constants/image_string.dart';
 import 'package:e_cormerce_project/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
@@ -52,12 +52,9 @@ class Home extends StatelessWidget {
             ),
 
             //Body
-            Container(
-              padding: const EdgeInsets.all(AppSizes.defaultSpace),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(AppSizes.md),
-              ),
-              child: Image(image: AssetImage(AppImage.banner3)),
+            Padding(
+              padding: EdgeInsets.all(AppSizes.defaultSpace),
+              child: PromoSlider(),
             ),
           ],
         ),
@@ -65,3 +62,4 @@ class Home extends StatelessWidget {
     );
   }
 }
+
