@@ -16,6 +16,7 @@ class RoundedImage extends StatelessWidget {
     this.isNetworkImage = false,
     this.onPressed,
     this.borderRadius = AppSizes.md,
+    this.margin,
   });
 
   final double? width, height;
@@ -25,6 +26,7 @@ class RoundedImage extends StatelessWidget {
   final Color backgroundColor;
   final BoxFit? fit;
   final EdgeInsetsGeometry? padding;
+  final EdgeInsetsGeometry? margin;
   final bool isNetworkImage;
   final VoidCallback? onPressed;
   final double borderRadius;
@@ -37,7 +39,7 @@ class RoundedImage extends StatelessWidget {
         width: width,
         height: height,
         padding: padding,
-        margin: EdgeInsets.symmetric(vertical: 12),
+        margin: margin,
         decoration: BoxDecoration(
           border: border,
           color: backgroundColor,

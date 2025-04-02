@@ -1,10 +1,12 @@
 import 'package:e_cormerce_project/common/widgets/custom_shapes/containers/search_container.dart';
+import 'package:e_cormerce_project/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:e_cormerce_project/common/widgets/texts/section_heading.dart';
 import 'package:e_cormerce_project/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:e_cormerce_project/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:e_cormerce_project/features/shop/screens/home/widgets/home_categories.dart';
 import 'package:e_cormerce_project/features/shop/screens/home/widgets/promo_slider.dart';
 import 'package:e_cormerce_project/utils/constants/colors.dart';
+import 'package:e_cormerce_project/utils/constants/image_string.dart';
 import 'package:e_cormerce_project/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
@@ -54,7 +56,19 @@ class Home extends StatelessWidget {
             //Body
             Padding(
               padding: EdgeInsets.all(AppSizes.defaultSpace),
-              child: PromoSlider(),
+              child: Column(
+                children: [
+                  // PromoSlider
+                  PromoSlider(
+                    banners: [
+                      AppImage.banner1,
+                      AppImage.banner2,
+                      AppImage.banner3,
+                    ],
+                  ),
+                  ProductCardVertical(),
+                ],
+              ),
             ),
           ],
         ),
@@ -62,4 +76,3 @@ class Home extends StatelessWidget {
     );
   }
 }
-
