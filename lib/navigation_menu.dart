@@ -1,4 +1,5 @@
 import 'package:e_cormerce_project/features/shop/screens/home/home.dart';
+import 'package:e_cormerce_project/features/shop/screens/search/search.dart';
 import 'package:e_cormerce_project/utils/constants/colors.dart';
 import 'package:e_cormerce_project/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
@@ -46,7 +47,7 @@ class NavigationController extends GetxController {
 
   final screens = [
     const Home(),
-    Container(color: Colors.red),
+    const Search(),
     Container(color: Colors.orange),
     Container(color: Colors.blue),
   ];

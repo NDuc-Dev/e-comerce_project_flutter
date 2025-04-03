@@ -2,6 +2,7 @@ import 'package:e_cormerce_project/common/styles/shadows.dart';
 import 'package:e_cormerce_project/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:e_cormerce_project/common/widgets/icons/circular_icon.dart';
 import 'package:e_cormerce_project/common/widgets/images/rounded_image.dart';
+import 'package:e_cormerce_project/common/widgets/texts/product_price_text.dart';
 import 'package:e_cormerce_project/common/widgets/texts/product_title_text.dart';
 import 'package:e_cormerce_project/utils/constants/colors.dart';
 import 'package:e_cormerce_project/utils/constants/image_string.dart';
@@ -18,7 +19,7 @@ class ProductCardVertical extends StatelessWidget {
 
     //Container with side padding, color, edges, radius, and shadow
     return Container(
-      width: 200,
+      width: 190,
       padding: EdgeInsets.all(1),
       decoration: BoxDecoration(
         boxShadow: [AppShadowStyle.verticalProductShadow],
@@ -29,9 +30,9 @@ class ProductCardVertical extends StatelessWidget {
         children: [
           //Thumbnail, wishlist btn, and discount badge
           RoundedContainer(
-            height: 200,
+            height: 190,
             padding: const EdgeInsets.all(AppSizes.sm),
-            backgroundColor: dark ? AppColors.dark : AppColors.light,
+            backgroundColor: dark ? AppColors.darkerGrey : AppColors.white,
             child: Stack(
               children: [
                 //Thumbnail image
@@ -101,34 +102,31 @@ class ProductCardVertical extends StatelessWidget {
                     ),
                   ],
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    //Price
-                    Text(
-                      '1.200.000 VND',
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: Theme.of(context).textTheme.headlineSmall,
+              ],
+            ),
+          ),
+          const Spacer(),
+          Padding(
+            padding: const EdgeInsets.only(left: AppSizes.sm),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                //Price
+                ProductPriceText(price: '1.200.000', isLarge: true),
+            
+                Container(
+                  decoration: const BoxDecoration(
+                    color: AppColors.dark,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(AppSizes.cardRadiusMd),
+                      bottomRight: Radius.circular(AppSizes.productImageRadius),
                     ),
-
-                    Container(
-                      decoration: const BoxDecoration(
-                        color: AppColors.dark,
-                        borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(AppSizes.cardRadiusMd),
-                          bottomRight: Radius.circular(
-                            AppSizes.productImageRadius,
-                          ),
-                        ),
-                      ),
-                      child: const SizedBox(
-                        width: AppSizes.iconLg * 1.2,
-                        height: AppSizes.iconLg * 1.2,
-                        child: const Icon(Iconsax.add, color: AppColors.white),
-                      ),
-                    ),
-                  ],
+                  ),
+                  child: const SizedBox(
+                    width: AppSizes.iconLg * 1.06,
+                    height: AppSizes.iconLg * 1.06,
+                    child: Icon(Iconsax.add, color: AppColors.white),
+                  ),
                 ),
               ],
             ),

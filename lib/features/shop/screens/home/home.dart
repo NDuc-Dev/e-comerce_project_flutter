@@ -1,4 +1,5 @@
 import 'package:e_cormerce_project/common/widgets/custom_shapes/containers/search_container.dart';
+import 'package:e_cormerce_project/common/widgets/layouts/grid_layout.dart';
 import 'package:e_cormerce_project/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:e_cormerce_project/common/widgets/texts/section_heading.dart';
 import 'package:e_cormerce_project/features/shop/screens/home/widgets/home_appbar.dart';
@@ -68,20 +69,12 @@ class Home extends StatelessWidget {
                   ),
                   const SizedBox(height: AppSizes.spaceBtwSections),
 
+                  AppSectionHeading(title: 'New Products', onPressed: () {}),
                   //Hots Products
-                  GridView.builder(
-                    itemCount: 4,
-                    shrinkWrap: true,
-                    gridDelegate:
-                        const SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: 2,
-                          mainAxisSpacing: AppSizes.gridViewSpacing,
-                          crossAxisSpacing: AppSizes.gridViewSpacing,
-                          mainAxisExtent: 288,
-                        ),
-                    itemBuilder: (_, index) => ProductCardVertical(),
+                  GridLayout(
+                    itemCount: 6,
+                    itemBuilder: (_, index) => const ProductCardVertical(),
                   ),
-                  ProductCardVertical(),
                 ],
               ),
             ),
