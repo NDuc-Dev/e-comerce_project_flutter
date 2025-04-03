@@ -59,12 +59,27 @@ class Home extends StatelessWidget {
               child: Column(
                 children: [
                   // PromoSlider
-                  PromoSlider(
+                  const PromoSlider(
                     banners: [
                       AppImage.banner1,
                       AppImage.banner2,
                       AppImage.banner3,
                     ],
+                  ),
+                  const SizedBox(height: AppSizes.spaceBtwSections),
+
+                  //Hots Products
+                  GridView.builder(
+                    itemCount: 4,
+                    shrinkWrap: true,
+                    gridDelegate:
+                        const SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount: 2,
+                          mainAxisSpacing: AppSizes.gridViewSpacing,
+                          crossAxisSpacing: AppSizes.gridViewSpacing,
+                          mainAxisExtent: 288,
+                        ),
+                    itemBuilder: (_, index) => ProductCardVertical(),
                   ),
                   ProductCardVertical(),
                 ],

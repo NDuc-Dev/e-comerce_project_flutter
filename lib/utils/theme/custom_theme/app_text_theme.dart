@@ -53,8 +53,8 @@ class AppTextTheme {
     ),
 
     labelLarge: const TextStyle().copyWith(
-      fontSize: 12,
-      fontWeight: FontWeight.normal,
+      fontSize: 14,
+      fontWeight: FontWeight.w600,
       color: Colors.black,
     ),
     labelMedium: const TextStyle().copyWith(
@@ -113,8 +113,8 @@ class AppTextTheme {
     ),
 
     labelLarge: const TextStyle().copyWith(
-      fontSize: 12,
-      fontWeight: FontWeight.normal,
+      fontSize: 14,
+      fontWeight: FontWeight.w600,
       color: Colors.white,
     ),
     labelMedium: const TextStyle().copyWith(
