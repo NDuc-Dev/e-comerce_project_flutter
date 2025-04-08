@@ -28,8 +28,8 @@ class AppCircularIcon extends StatelessWidget {
       decoration: BoxDecoration(
         color:
             backgroundColor != null
-                ? AppColors.black.withValues(alpha: 0.9)
-                : AppColors.white.withValues(alpha: 0.9),
+                ? AppColors.white.withValues(alpha: 0.9)
+                : AppColors.black.withValues(alpha: 0.9),
         borderRadius: BorderRadius.circular(100),
       ),
       child: IconButton(

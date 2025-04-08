@@ -50,6 +50,8 @@ class Home extends StatelessWidget {
                       ],
                     ),
                   ),
+                  const SizedBox(height: AppSizes.spaceBtwSections,)
+
                 ],
               ),
             ),

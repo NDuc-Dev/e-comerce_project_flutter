@@ -21,6 +21,7 @@ class BrandShowcase extends StatelessWidget {
       child: Column(
         children: [
           const BrandCard(showBorder: false),
+          const SizedBox(height: AppSizes.spaceBtwItems),
           Row(
             children:
                 images

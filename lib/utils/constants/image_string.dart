@@ -48,4 +48,7 @@ class AppImage {
   static const String product9 =
       "assets/images/products/NikeBasketballShoeGreenBlack.png";
   static const String product10 = "assets/images/products/NikeWildhorse.png";
+
+  //User
+  static const String user = "assets/images/users/user.png";
 }

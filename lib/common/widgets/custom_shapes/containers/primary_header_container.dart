@@ -12,8 +12,8 @@ class PrimaryHeaderContainer extends StatelessWidget {
       child: Container(
         color: AppColors.primaryColor,
         padding: EdgeInsets.all(0),
-        child: SizedBox(
-          height: 380,
+        // child: SizedBox(
+        //   height: 380,
           child: Stack(
             children: [
               Positioned(
@@ -33,7 +33,7 @@ class PrimaryHeaderContainer extends StatelessWidget {
               child,
             ],
           ),
-        ),
+        // ),
       ),
     );
   }

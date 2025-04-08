@@ -1,14 +1,12 @@
 import 'package:e_cormerce_project/common/widgets/appbar/appbar.dart';
 import 'package:e_cormerce_project/common/widgets/appbar/tabbar.dart';
 import 'package:e_cormerce_project/common/widgets/brands/brand_card.dart';
-import 'package:e_cormerce_project/common/widgets/brands/brand_show_case.dart';
-import 'package:e_cormerce_project/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:e_cormerce_project/common/widgets/custom_shapes/containers/search_container.dart';
 import 'package:e_cormerce_project/common/widgets/layouts/grid_layout.dart';
 import 'package:e_cormerce_project/common/widgets/products_cart/cart_menu_icon.dart';
 import 'package:e_cormerce_project/common/widgets/texts/section_heading.dart';
+import 'package:e_cormerce_project/features/shop/screens/search/widgets/category_tab.dart';
 import 'package:e_cormerce_project/utils/constants/colors.dart';
-import 'package:e_cormerce_project/utils/constants/image_string.dart';
 import 'package:e_cormerce_project/utils/constants/sizes.dart';
 import 'package:e_cormerce_project/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
@@ -92,81 +90,11 @@ class Search extends StatelessWidget {
           },
           body: TabBarView(
             children: [
-              Padding(
-                padding: const EdgeInsets.all(AppSizes.defaultSpace),
-                child: Column(
-                  children: [
-                    //Brand
-                    BrandShowcase(
-                      images: [
-                        AppImage.product1,
-                        AppImage.product2,
-                        AppImage.product3,
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(AppSizes.defaultSpace),
-                child: Column(
-                  children: [
-                    //Brand
-                    BrandShowcase(
-                      images: [
-                        AppImage.product1,
-                        AppImage.product2,
-                        AppImage.product3,
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(AppSizes.defaultSpace),
-                child: Column(
-                  children: [
-                    //Brand
-                    BrandShowcase(
-                      images: [
-                        AppImage.product1,
-                        AppImage.product2,
-                        AppImage.product3,
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(AppSizes.defaultSpace),
-                child: Column(
-                  children: [
-                    //Brand
-                    BrandShowcase(
-                      images: [
-                        AppImage.product1,
-                        AppImage.product2,
-                        AppImage.product3,
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(AppSizes.defaultSpace),
-                child: Column(
-                  children: [
-                    //Brand
-                    BrandShowcase(
-                      images: [
-                        AppImage.product1,
-                        AppImage.product2,
-                        AppImage.product3,
-                      ],
-                    ),
-                  ],
-                ),
-              ),
+              CategoryTab(),
+              CategoryTab(),
+              CategoryTab(),
+              CategoryTab(),
+              CategoryTab(),
             ],
           ),
         ),

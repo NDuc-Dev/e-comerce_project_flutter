@@ -39,7 +39,7 @@ class AppVerticalImageText extends StatelessWidget {
                 child: Image(
                   image: AssetImage(image),
                   fit: BoxFit.cover,
-                  color: AppColors.dark,
+                  color: dark ? AppColors.white : AppColors.black,
                 ),
               ),
             ),
