@@ -1,5 +1,6 @@
 import 'package:e_cormerce_project/utils/constants/colors.dart';
 import 'package:e_cormerce_project/utils/constants/sizes.dart';
+import 'package:e_cormerce_project/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
 
 class AppCircularIcon extends StatelessWidget {
@@ -22,14 +23,15 @@ class AppCircularIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final dark = HelperFunction.isDarkMode(context);
     return Container(
       width: width,
       height: height,
       decoration: BoxDecoration(
         color:
-            backgroundColor != null
-                ? AppColors.white.withValues(alpha: 0.9)
-                : AppColors.black.withValues(alpha: 0.9),
+            dark
+                ? AppColors.black.withValues(alpha: 0.9)
+                : AppColors.white.withValues(alpha: 0.9),
         borderRadius: BorderRadius.circular(100),
       ),
       child: IconButton(

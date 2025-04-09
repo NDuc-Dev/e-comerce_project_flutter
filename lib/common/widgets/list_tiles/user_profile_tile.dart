@@ -5,9 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
 class UserProfileTile extends StatelessWidget {
-  const UserProfileTile({
-    super.key,
-  });
+  const UserProfileTile({super.key, this.onPressed});
+
+  final void Function()? onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +31,7 @@ class UserProfileTile extends StatelessWidget {
         ).textTheme.bodyMedium!.apply(color: AppColors.white),
       ),
       trailing: IconButton(
-        onPressed: () {},
+        onPressed: onPressed,
         icon: const Icon(Iconsax.edit, color: AppColors.white),
       ),
     );
