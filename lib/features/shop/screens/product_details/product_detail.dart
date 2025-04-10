@@ -1,7 +1,7 @@
 import 'package:e_cormerce_project/features/shop/screens/product_details/widgets/product_details_image_slider.dart';
+import 'package:e_cormerce_project/features/shop/screens/product_details/widgets/product_meta_data.dart';
 import 'package:e_cormerce_project/features/shop/screens/product_details/widgets/rating_share_widgets.dart';
 import 'package:e_cormerce_project/utils/constants/sizes.dart';
-import 'package:e_cormerce_project/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
 
 class ProductDetailScreen extends StatelessWidget {
@@ -9,7 +9,7 @@ class ProductDetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = HelperFunction.isDarkMode(context);
+    // final dark = HelperFunction.isDarkMode(context);
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
@@ -29,7 +29,7 @@ class ProductDetailScreen extends StatelessWidget {
                   RatingAndShare(),
 
                   //Price, Title, Stock, Brand
-                  
+                  ProductMetaData(),
                 ],
               ),
             ),
@@ -40,5 +40,3 @@ class ProductDetailScreen extends StatelessWidget {
     );
   }
 }
-
-
