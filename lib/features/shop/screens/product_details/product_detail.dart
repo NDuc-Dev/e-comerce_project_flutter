@@ -1,3 +1,4 @@
+import 'package:e_cormerce_project/features/shop/screens/product_details/widgets/product_attribute.dart';
 import 'package:e_cormerce_project/features/shop/screens/product_details/widgets/product_details_image_slider.dart';
 import 'package:e_cormerce_project/features/shop/screens/product_details/widgets/product_meta_data.dart';
 import 'package:e_cormerce_project/features/shop/screens/product_details/widgets/rating_share_widgets.dart';
@@ -30,6 +31,8 @@ class ProductDetailScreen extends StatelessWidget {
 
                   //Price, Title, Stock, Brand
                   ProductMetaData(),
+
+                  ProductAttribute()
                 ],
               ),
             ),
