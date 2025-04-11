@@ -81,6 +81,7 @@ class ProductMetaData extends StatelessWidget {
             ),
           ],
         ),
+        const SizedBox(height: AppSizes.spaceBtwItems / 1.5),
       ],
     );
   }

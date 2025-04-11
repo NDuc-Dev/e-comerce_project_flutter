@@ -1,3 +1,4 @@
+import 'package:e_cormerce_project/common/widgets/chips/choice_chip.dart';
 import 'package:e_cormerce_project/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:e_cormerce_project/common/widgets/texts/product_price_text.dart';
 import 'package:e_cormerce_project/common/widgets/texts/product_title_text.dart';
@@ -82,15 +83,59 @@ class ProductAttribute extends StatelessWidget {
 
         //Attribute
         Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            AppSectionHeading(title: 'Colors'),
+            const AppSectionHeading(title: 'Colors', showActionButton: false),
+            const SizedBox(height: AppSizes.spaceBtwItems / 2),
+            Wrap(
+              children: [
+                AppChoiceChip(
+                  text: "Green",
+                  selected: true,
+                  onSelected: (value) {},
+                ),
+                AppChoiceChip(
+                  text: "Red",
+                  selected: false,
+                  onSelected: (value) {},
+                ),
+                AppChoiceChip(
+                  text: "Blue",
+                  selected: false,
+                  onSelected: (value) {},
+                ),
+                AppChoiceChip(
+                  text: "Pink",
+                  selected: false,
+                  onSelected: (value) {},
+                ),
+              ],
+            ),
+          ],
+        ),
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            AppSectionHeading(title: 'Size', showActionButton: false),
             SizedBox(height: AppSizes.spaceBtwItems / 2),
-            AppChoiceChip(),
+            Wrap(
+              spacing: 8,
+              children: [
+                AppChoiceChip(text: "35", selected: true),
+                AppChoiceChip(text: "36", selected: false),
+                AppChoiceChip(text: "37", selected: false),
+                AppChoiceChip(text: "38", selected: false),
+                AppChoiceChip(text: "39", selected: false),
+                AppChoiceChip(text: "40", selected: false),
+                AppChoiceChip(text: "41", selected: false),
+                AppChoiceChip(text: "42", selected: false),
+                AppChoiceChip(text: "43", selected: false),
+                AppChoiceChip(text: "44", selected: false),
+              ],
+            ),
           ],
         ),
       ],
     );
   }
 }
-
-
