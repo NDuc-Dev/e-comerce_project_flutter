@@ -21,7 +21,6 @@ dependencies:
   url_launcher: ^6.3.1
   flutter_native_splash: ^2.4.5
   smooth_page_indicator: ^1.2.1
-  carousel_slider: ^5.0.0
   lottie: ^3.3.1
 
 
@@ -36,6 +35,8 @@ dependencies:
 
   #Product specific
   readmore: ^3.0.0
+  carousel_slider: ^5.0.0
+  flutter_rating_bar: ^4.0.1
   
 
   #----------./ Packages end----------#
@@ -59,6 +60,7 @@ flutter:
     - assets/images/products/
     - assets/images/banners/
     - assets/images/users/
+    - assets/images/reviews/
     - assets/animations/
     - assets/animations/on_boarding/
 

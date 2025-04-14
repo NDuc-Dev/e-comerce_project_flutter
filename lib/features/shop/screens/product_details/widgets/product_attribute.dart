@@ -121,16 +121,56 @@ class ProductAttribute extends StatelessWidget {
             Wrap(
               spacing: 8,
               children: [
-                AppChoiceChip(text: "35", selected: true),
-                AppChoiceChip(text: "36", selected: false),
-                AppChoiceChip(text: "37", selected: false),
-                AppChoiceChip(text: "38", selected: false),
-                AppChoiceChip(text: "39", selected: false),
-                AppChoiceChip(text: "40", selected: false),
-                AppChoiceChip(text: "41", selected: false),
-                AppChoiceChip(text: "42", selected: false),
-                AppChoiceChip(text: "43", selected: false),
-                AppChoiceChip(text: "44", selected: false),
+                AppChoiceChip(
+                  text: "35",
+                  selected: true,
+                  onSelected: (value) {},
+                ),
+                AppChoiceChip(
+                  text: "36",
+                  selected: false,
+                  onSelected: (value) {},
+                ),
+                AppChoiceChip(
+                  text: "37",
+                  selected: false,
+                  onSelected: (value) {},
+                ),
+                AppChoiceChip(
+                  text: "38",
+                  selected: false,
+                  onSelected: (value) {},
+                ),
+                AppChoiceChip(
+                  text: "39",
+                  selected: false,
+                  onSelected: (value) {},
+                ),
+                AppChoiceChip(
+                  text: "40",
+                  selected: false,
+                  onSelected: (value) {},
+                ),
+                AppChoiceChip(
+                  text: "41",
+                  selected: false,
+                  onSelected: (value) {},
+                ),
+                AppChoiceChip(
+                  text: "42",
+                  selected: false,
+                  onSelected: (value) {},
+                ),
+                AppChoiceChip(
+                  text: "43",
+                  selected: false,
+                  onSelected: (value) {},
+                ),
+                AppChoiceChip(
+                  text: "44",
+                  selected: false,
+                  onSelected: (value) {},
+                ),
               ],
             ),
           ],

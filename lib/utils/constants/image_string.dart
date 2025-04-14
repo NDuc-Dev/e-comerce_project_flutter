@@ -51,4 +51,9 @@ class AppImage {
 
   //User
   static const String user = "assets/images/users/user.png";
+
+  //User profile for rating and review
+  static const String userProfile1 = "assets/images/reviews/review_profile_image_1.jpg";
+  static const String userProfile2 = "assets/images/reviews/review_profile_image_1.jpeg";
+  static const String userProfile3 = "assets/images/reviews/review_profile_image_1.jpeg";
 }

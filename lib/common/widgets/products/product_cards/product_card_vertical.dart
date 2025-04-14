@@ -36,7 +36,8 @@ class ProductCardVertical extends StatelessWidget {
             RoundedContainer(
               height: 190,
               padding: const EdgeInsets.all(AppSizes.sm),
-              backgroundColor: dark ? AppColors.darkerGrey : AppColors.white,
+              backgroundColor:
+                  dark ? AppColors.darkerGrey : AppColors.lightGrey,
               child: Stack(
                 children: [
                   //Thumbnail image
