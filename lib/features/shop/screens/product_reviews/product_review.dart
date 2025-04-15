@@ -39,6 +39,9 @@ class ProductReviewScreen extends StatelessWidget {
               const SizedBox(height: AppSizes.spaceBtwSections),
 
               const UserReviewCard(),
+              const UserReviewCard(),
+              const UserReviewCard(),
+              const UserReviewCard(),
             ],
           ),
         ),

@@ -3,6 +3,7 @@ import 'package:e_cormerce_project/common/widgets/custom_shapes/containers/prima
 import 'package:e_cormerce_project/common/widgets/list_tiles/setting_menu_tile.dart';
 import 'package:e_cormerce_project/common/widgets/list_tiles/user_profile_tile.dart';
 import 'package:e_cormerce_project/common/widgets/texts/section_heading.dart';
+import 'package:e_cormerce_project/features/personalization/screens/address/address.dart';
 import 'package:e_cormerce_project/features/personalization/screens/profile/profile.dart';
 import 'package:e_cormerce_project/utils/constants/colors.dart';
 import 'package:e_cormerce_project/utils/constants/sizes.dart';
@@ -57,7 +58,7 @@ class SettingsScreen extends StatelessWidget {
                     icon: Iconsax.safe_home,
                     title: 'My Address',
                     subtitle: 'Set shopping delivery address',
-                    onTap: () {},
+                    onTap: () => Get.to(() => UserAddressScreen()),
                   ),
                   SettingMenuTile(
                     icon: Iconsax.shopping_cart,
