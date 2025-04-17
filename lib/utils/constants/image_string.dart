@@ -56,4 +56,7 @@ class AppImage {
   static const String userProfile1 = "assets/images/reviews/review_profile_image_1.jpg";
   static const String userProfile2 = "assets/images/reviews/review_profile_image_1.jpeg";
   static const String userProfile3 = "assets/images/reviews/review_profile_image_1.jpeg";
+
+  //Payment Method
+  static const String vnPay = 'assets/images/payment_method/vnpay-logo.png';
 }
