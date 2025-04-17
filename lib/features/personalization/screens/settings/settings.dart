@@ -5,6 +5,8 @@ import 'package:e_cormerce_project/common/widgets/list_tiles/user_profile_tile.d
 import 'package:e_cormerce_project/common/widgets/texts/section_heading.dart';
 import 'package:e_cormerce_project/features/personalization/screens/address/address.dart';
 import 'package:e_cormerce_project/features/personalization/screens/profile/profile.dart';
+import 'package:e_cormerce_project/features/shop/screens/cart/cart.dart';
+import 'package:e_cormerce_project/features/shop/screens/order/order.dart';
 import 'package:e_cormerce_project/utils/constants/colors.dart';
 import 'package:e_cormerce_project/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
@@ -64,13 +66,13 @@ class SettingsScreen extends StatelessWidget {
                     icon: Iconsax.shopping_cart,
                     title: 'My Cart',
                     subtitle: 'Add, remove products and move to checkout',
-                    onTap: () {},
+                    onTap: () => Get.to(() => CartScreen()),
                   ),
                   SettingMenuTile(
                     icon: Iconsax.bag_tick,
                     title: 'My Orders',
                     subtitle: 'In-Progress and Completed orders',
-                    onTap: () {},
+                    onTap: () => Get.to(() => OrderScreen()),
                   ),
                   SettingMenuTile(
                     icon: Iconsax.notification,

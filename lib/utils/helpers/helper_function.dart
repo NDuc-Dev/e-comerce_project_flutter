@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 
 class HelperFunction {
+  HelperFunction._();
   static Color? getColor(String value) {
     if (value == 'Green') {
       return Colors.green;

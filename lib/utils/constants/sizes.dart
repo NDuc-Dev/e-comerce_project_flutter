@@ -1,4 +1,5 @@
 class AppSizes {
+  AppSizes._();
   //Padding and margin sizes
   static const double xs = 4.0;
   static const double sm = 8.0;

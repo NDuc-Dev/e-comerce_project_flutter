@@ -118,7 +118,8 @@ class ProductCardVertical extends StatelessWidget {
                 children: [
                   //Price
                   ProductPriceText(price: '1.200.000', isLarge: true),
-
+                  
+                  //Add to cart btn
                   Container(
                     decoration: const BoxDecoration(
                       color: AppColors.dark,

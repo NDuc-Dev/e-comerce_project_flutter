@@ -59,4 +59,7 @@ class AppImage {
 
   //Payment Method
   static const String vnPay = 'assets/images/payment_method/vnpay-logo.png';
+
+  //Success Payment
+  static const String paymentSuccess = 'assets/animations/payment-success.json';
 }

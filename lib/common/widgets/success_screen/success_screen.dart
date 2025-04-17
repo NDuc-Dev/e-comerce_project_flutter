@@ -6,13 +6,20 @@ import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
 class SuccessScreen extends StatelessWidget {
-  const SuccessScreen({super.key, required this.animation, required this.title, required this.subtitle, required this.onPressed});
-    final String animation, title, subtitle;
-    final VoidCallback onPressed;
+  const SuccessScreen({
+    super.key,
+    required this.animation,
+    required this.title,
+    required this.subtitle,
+    required this.onPressed,
+    this.buttonText = AppTexts.appContinue,
+  });
+  final String animation, title, subtitle;
+  final VoidCallback onPressed;
+  final String buttonText;
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
@@ -47,7 +54,7 @@ class SuccessScreen extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: onPressed,
-                  child: Text(AppTexts.appContinue),
+                  child: Text(buttonText),
                 ),
               ),
             ],
